@@ -855,7 +855,7 @@ only screen and (                min-resolution: 2dppx) {
         left: 0;
         top: 0;
         z-index: 60;
-        border-bottom: 2px solid #7296ee;
+        border-bottom: 2px solid #d1d1d1;
     }
     
     .header-top-container {
@@ -1007,7 +1007,7 @@ only screen and (                min-resolution: 2dppx) {
     }
     
     .grid-news {
-        padding-top: 30px;
+        padding-top: 20px;
     }
 }
 
