@@ -13,21 +13,6 @@ const modal = document.getElementById('demo-modal');
 const closeModalButton = document.querySelector('.modal-closed-button');
 const enableNotificationsLink = document.querySelector('.modal-content-link');
 
-// MODAL
-if(elModalClosedButton) {
-    elModalOpneButton.addEventListener('click', function () {
-        elModal.classList.add('modal-open')
-    });
-    
-    elModalClosedButton.addEventListener('click', function () {
-        elModal.classList.remove('modal-open')
-    });
-}
-
-setTimeout (function () {
-    elModal.classList.add('modal-open');
-}, 3000)
-
 // MENU-SWIPE
 document.addEventListener('DOMContentLoaded', () => {
     elSeeBtn.addEventListener('click', () => {
@@ -106,4 +91,28 @@ window.addEventListener('DOMContentLoaded', () => {
     
     // ASIDE MARGIN UPDATE
     window.addEventListener('resize', AsideMargin);
+});
+
+// CHECK LOCALSTORAGE FOR USER'S PREFERENCE
+document.addEventListener('DOMContentLoaded', () => {
+    // CHECK LOCALSTORAGE FOR USER'S PREFERENCE
+    if (localStorage.getItem('modalClosed') !== 'true') {
+        setTimeout(() => {
+            modal.classList.add('modal-open');
+        }, 3000); // Show modal after 3 seconds
+    }
+    
+    // CLOSE MODAL AND SAVE USER'S CHOICE TO LOCALSTORAGE
+    closeModalButton.addEventListener('click', () => {
+        modal.classList.remove('modal-open');
+        localStorage.setItem('modalClosed', 'true');
+    });
+    
+    // HANDLE ENABLING NOTIFICATIONS AND SAVE TO LOCALSTORAGE
+    enableNotificationsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        modal.classList.remove('modal-open');
+        localStorage.setItem('modalClosed', 'true');
+        // ADDITIONAL LOGIC TO ENABLE NOTIFICATIONS CAN BE ADDED HERE
+    });
 });
