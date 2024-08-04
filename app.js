@@ -7,6 +7,8 @@ const elMenuBtn = document.querySelector('.menu-btn');
 const elMobileMenu = document.querySelector('.mobile-menu');
 const elSitenav = document.querySelector('.sitenav');
 const elSeeBtn = document.querySelector('.see-btn');
+const elHeaderAside = document.querySelector('.header-aside');
+const elHeaderTop = document.querySelector('.header-top');
 
 // MODAL
 if(elModalClosedButton) {
@@ -72,3 +74,34 @@ document.addEventListener('click', function (event) {
         elSitenav.classList.remove('sitenav-active');
     }
 });
+
+// SCROLL
+window.onscroll = function() {
+    if (window.innerWidth > 1000) {
+        const offset = elSitenav.offsetHeight;
+        if (window.scrollY > offset - 20) {
+            elSitenav.classList.add("sitenav-background");
+        } else if (window.scrollY < offset - 20) {
+            elSitenav.classList.remove("sitenav-background");
+        }
+    }
+}
+
+// MARGIN-TOP
+window.addEventListener('DOMContentLoaded', () => {
+    function AsideMargin() {
+        if (window.innerWidth < 1001) {
+            const headerHeight = elHeaderTop.offsetHeight;
+            elHeaderAside.style.marginTop = `${headerHeight + 10}px`;
+        } else {
+            elHeaderAside.style.marginTop = '10px'; // RESET MARGIN IF CONDITION IS NOT MET
+        }
+    }
+    
+    // ASIDE MARGIN FUNCTION
+    AsideMargin();
+    
+    // ASIDE MARGIN UPDATE
+    window.addEventListener('resize', AsideMargin);
+});
+

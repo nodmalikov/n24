@@ -282,6 +282,16 @@ img {
     padding-bottom: 12px;
     border-bottom: 1px solid #d1d1d1;
     margin-bottom: 40px;
+    position: sticky;
+}
+
+.sitenav-background {
+    background-color: #f6f6f6;
+    position: fixed;
+    z-index: 80;
+    width: 100vw;
+    left: 0;
+    top: 0;
 }
 
 .sitenav:last-child {
@@ -839,6 +849,14 @@ only screen and (                min-resolution: 2dppx) {
 
 /* MEDIA-QUERIES */
 @media only screen and (max-width: 1000px) {
+    .header-top {
+        position: fixed;
+        width: 100%;
+        left: 0;
+        top: 0;
+        z-index: 60;
+    }
+    
     .header-top-container {
         justify-content: space-between;
     }
@@ -846,6 +864,7 @@ only screen and (                min-resolution: 2dppx) {
     .mobile-menu {
         background-color: rgb(252, 220, 75);
         position: fixed;
+        z-index: 50;
         width: 100%;
         left: 0;
         bottom: 0;
@@ -903,6 +922,7 @@ only screen and (                min-resolution: 2dppx) {
     
     .sitenav {
         position: fixed;
+        z-index: 70;
         background-color: #f6f6f6;
         left: 0;
         top: 0;
