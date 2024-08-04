@@ -985,7 +985,7 @@ only screen and (                min-resolution: 2dppx) {
     .modal-dialog {
         max-width: 90vw;
     }
-
+    
     .grid-news {
         padding-top: 30px;
     }
@@ -1010,7 +1010,7 @@ only screen and (                min-resolution: 2dppx) {
     .grid-news-item {
         padding: 10px;
     }
-
+    
     .article-title-link {
         font-size: 18px;
         line-height: 24px;
@@ -1079,7 +1079,7 @@ only screen and (                min-resolution: 2dppx) {
         font-size: 16px;
         line-height: 24px;
     }
-
+    
     .article-title-link {
         font-size: 15px;
         line-height: 21px;
