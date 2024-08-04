@@ -855,6 +855,7 @@ only screen and (                min-resolution: 2dppx) {
         left: 0;
         top: 0;
         z-index: 60;
+        border-bottom: 2px solid #7296ee;
     }
     
     .header-top-container {
