@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>N24 LIST</title>
+
+    <!-- GOOGLE-FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- CSS-LINKS -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- SITE-HEADER -->
+    <header class="header">
+        <div class="header-top">
+            <div class="header-top-container container">
+                <!-- HEADER-LOGO -->
+                <a href="index.html" class="header-logo">NAMANGANLIKLAR 24</a>
+                
+                <div class="mobile-menu">
+                    <div class="mobile-inner">
+                        <div class="mobile-line"></div>
+                        <!-- CURRENCY-RATES -->
+                        <ul class="valute-list">
+                            <li class="valute-item">
+                                <b class="valute-emersion">$</b>
+                                <span class="valute-value">10137.2</span>
+                            </li>
+                            <li class="valute-item">
+                                <b class="valute-emersion">P</b>
+                                <span class="valute-value">138.26</span>
+                            </li>
+                        </ul>
+                        <div class="search-toggle">
+                            <!-- GLOBAL-SEARCH-FORM -->
+                            <form class="global-search-form" action="https://echo.htmlacademy.ru">
+                                <input class="global-search-form-input" type="search" name="search" placeholder="Поиск" aria-label="Поиск" required>
+                            </form>
+                            <!-- LANGUAGE-TOGGLE -->
+                            <div class="lang-button">
+                                <div class="lang-toggle">
+                                    <a href="index.html" class="lang-toggle-link lang-toggle-link-active">УЗ</a>
+                                    <a href="index.html/ru" class="lang-toggle-link">РУ</a>
+                                </div>
+                                <!-- SITE-LOGIN-BUTTON -->
+                                <a class="button button-primary" href="#">Войти</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="header-btn-group">
+                    <button class="menu-btn">
+                        <svg class="bi bi-grid-fill menu-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zm8 0A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm-8 8A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm8 0A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5z"/>
+                        </svg>
+                    </button>
+                    <button class="see-btn">
+                        <svg class="bi bi-eye see-icon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M16 8s-3-5.5-8-5.5S0 8 0 8s3 5.5 8 5.5S16 8 16 8M1.173 8a13 13 0 0 1 1.66-2.043C4.12 4.668 5.88 3.5 8 3.5s3.879 1.168 5.168 2.457A13 13 0 0 1 14.828 8q-.086.13-.195.288c-.335.48-.83 1.12-1.465 1.755C11.879 11.332 10.119 12.5 8 12.5s-3.879-1.168-5.168-2.457A13 13 0 0 1 1.172 8z"/>
+                            <path d="M8 5.5a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5M4.5 8a3.5 3.5 0 1 1 7 0 3.5 3.5 0 0 1-7 0"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <!-- SITENAV -->
+            <nav class="sitenav">
+                <ul class="sitenav-list">
+                    <li class="sitenav-item">
+                        <a href="index.html" class="sitenav-link">Главное</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="list.html" class="sitenav-link">Интересное</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="contact.html" class="sitenav-link">Экономика</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Политика</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Общество</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Технологии</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Спорт</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Культура</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Происшествия</a>
+                    </li>
+                    <li class="sitenav-item">
+                        <a href="#" class="sitenav-link">Наука</a>
+                    </li>
+                </ul>
+                <!-- MENU-CLOSE -->
+                <svg class="bi bi-house-fill menu-close" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293z"/>
+                    <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293z"/>
+                </svg>
+            </nav>
+            <!-- SITE-AD -->
+            <aside>
+                <a class="site-header-banner-link" href="https://yangiuylar.uz" target="_blank">
+                    <img class="site-header-banner-img" src="img/house-banner-img.jpg" alt="House banner" srcset="img/house-banner-img.jpg 1x, img/house-banner-img@2x.jpg 2x" width="1200" height="128">
+                </a>
+            </aside>
+        </div>
+    </header>
+
+    <!-- SITE-MAIN -->
+    <main class="main">
+        <!-- GLOBAL-NEWS -->
+        <div class="global-news-container container">
+            <h2 class="global-news-heading">В мире</h2>
+            <div class="global-news-wrapper">
+                <!-- FLEX-NEWS -->
+            <section class="flex-news">
+                <!-- FLEX-NEWS-LIST -->
+                <ul class="flex-news-list">
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/tashkent.jpg" alt="Отопление Ташкента на 30 лет переходит в управление французской Veolia" srcset="img/tashkent.jpg 1x, img/tashkent@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Отопление Ташкента на 30 лет переходит в управление французской Veolia</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Система теплоснабжения Ташкента на 30 лет будет передана в управление французской компании Veolia для модернизации и реконструкции, сообщает 22 сентября пресс-служба...
+                            </p>
+                            <!-- ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/krasnaya-vesna.jpg" alt="Krasnaya vesna" srcset="img/krasnaya-vesna.jpg 1x, img/krasnaya-vesna@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">ИА красная весна</span>
+                                    <time datetime="2021-05-12T15:26:00">15:26</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/apple-building.jpg" alt="Пользователи жалуются на новую проблему iPhone 13, связанную с камерой" srcset="img/apple-building.jpg 1x, img/apple-building@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Пользователи жалуются на новую проблему iPhone 13, связанную с камерой</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Пользователи смартфона Apple iPhone 13 продолжают сообщать о новых проблемах, с которыми они сталкиваются при использовании флагмана, поступившего в продажу только позавчера...
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/pepelas-news.png" alt="Pepelas news" srcset="img/pepelas-news.png 1x, img/pepelas-news@2x.png 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">Пепелац Ньюс</span>
+                                    <time datetime="2021-05-12T07:35:00">07:35</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/xbox-games.jpg" alt="Halo Infinite сравнили на Xbox One, Xbox One X, Xbox Series S и Xbox Series X" srcset="img/xbox-games.jpg 1x, img/xbox-games@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Halo Infinite сравнили на Xbox One, Xbox One X, Xbox Series S и Xbox Series X</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Ютубер с канала ElAnalistaDeBits сравнил Halo Infinite на консолях Xbox One, Xbox One X, Xbox Series S и Xbox Series X. Графика впечатляет на всех платформах. Также отмечается...
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/klub-dns.png" alt="Klub dns" srcset="img/klub-dns.png 1x, img/klub-dns@2x.png 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">КDNS</span>
+                                    <time datetime="2021-05-12T15:33:00">15:33</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/uz-car.jpg" alt="В Узбекистане показали тюнинговые варианты моделей Lacetti, Cobalt, Nexia и Spark" srcset="img/uz-car.jpg 1x, img/uz-car@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">В Узбекистане показали тюнинговые варианты моделей Lacetti, Cobalt, Nexia и Spark</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                «В сети наши потребители обсуждали тему сильного преобладания белого цвета в модельном ряду UzAuto Motors. Почему вы не делаете двухцветные автомобили? Этот вопрос был...
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/sputnik-uz.jpg" alt="Sputnik uz" srcset="img/sputnik-uz.jpg 1x, img/sputnik-uz@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">Sputnik Узбекистан</span>
+                                    <time datetime="2021-05-12T18:43:00">18:43</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/iphone-13pro.jpg" alt="Время автономной работы iPhone 13 Pro Max стало рекордным для смартфонов Apple" srcset="img/iphone-13pro.jpg 1x, img/iphone-13pro@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Время автономной работы iPhone 13 Pro Max стало рекордным для смартфонов Apple</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Линейка смартфонов iPhone 13 от Apple была презентована на прошлой неделе. Прием предзаказов на устройство стартовал 22 сентября, а 24 сентября новинка появилась в магазинах.
+                            </p>
+                            <!-- ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/ireactor.jpg" alt="iReactor" srcset="img/ireactor.jpg 1x, img/ireactor@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">iReactor</span>
+                                    <time datetime="2021-05-12T12:25:00">12:25</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/china-fg.jpg" alt="Криптобиржа Huobi закрыла регистрацию пользователей из Китая" srcset="img/china-fg.jpg 1x, img/china-fg@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Криптобиржа Huobi закрыла регистрацию пользователей из Китая</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Крупнейшая в Китае биржа для торговли биткоинами Huobi приостановила регистрацию пользователей из КНР. Ранее местный Центробанк назвал нелегальными все транзакции...
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/company.jpg" alt="Company news" srcset="img/company.jpg 1x, img/company@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">Компания</span>
+                                    <time datetime="2021-05-12T11:35:00">11:35</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/cinema-competition.jpg" alt="В Узбекистане пройдет международный конкурс молодых кинематографистов «Кино за 5 дней»" srcset="img/cinema-competition.jpg 1x, img/cinema-competition@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">В Узбекистане пройдет международный конкурс молодых кинематографистов «Кино за 5 дней»</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                В Узбекистане 22 сентября стартовал конкурс молодых кинематографистов «Кино за пять дней». Мероприятие проходит в рамках Ташкентского Международного...
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/fergana-news.jpg" alt="Fergana news" srcset="img/fergana-news.jpg 1x, img/fergana-news@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">Фергана</span>
+                                    <time datetime="2021-05-12T15:44:00">15:44</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+
+                    <!-- FLEX-NEWS-ITEM -->
+                    <li class="flex-news-item">
+                        <img class="flex-news-img" src="img/tesla.jpg" alt="Илон Маск принял участие во Всемирной сетевой конференции в Китае" srcset="img/tesla.jpg 1x, img/tesla@2x.jpg 2x" width="210" height="165">
+
+                        <!-- FLEX-ARTICLE-TEXT -->
+                        <div class="flex-news-text">
+                            <h3 class="article-title">
+                                <a href="#" class="article-title-link">Илон Маск принял участие во Всемирной сетевой конференции в Китае</a>
+                            </h3>
+                            <p class="article-subtitle flex-news-subtitle">
+                                Илон Маск (Elon Musk, Руководитель фирмы Tesla и других проектов) уже второй раз за полторы недели обратился к китайским правящим кругам и гражданам.
+                            </p>
+                            <!-- FLEX-ARTICLE-FOOTER -->
+                            <footer class="article-footer">
+                                <img class="article-footer-source-img" src="img/solenka-info.jpg" alt="Solenka info" srcset="img/solenka-info.jpg 1x, img/solenka-info@2x.jpg 2x">
+                                <div class="article-footer-source">
+                                    <span class="article-footer-text">FBM.ru</span>
+                                    <time datetime="2021-05-12T22:23:00">22:23</time>
+                                </div>
+                            </footer>
+                        </div>
+                    </li>
+                </ul>
+                <button type="button" class="button button-next">Показать еше</button>
+            </section>
+
+            <!-- SIDEBAR-NEWS -->
+            <div class="sidebar-news">
+                <div class="sidebar-wrapper">
+                    <h2 class="global-news-heading sidebar-heading">Главное</h2>
+                    <!-- SIDEBAR-LIST -->
+                    <ul class="sidebar-list">
+
+                        <!-- SIDEBAR-ITEM -->
+                        <li class="sidebar-item">
+                            <h3 class="sidebar-title">
+                                <a href="#" class="sidebar-link">В Фергане создадут узбекско-пакистанский университет</a>
+                            </h3>
+                            <footer class="sidebar-footer">
+                                    <span class="article-footer-text">Sputnik Узбекистан</span>
+                                    <time datetime="2021-05-12T14:09:00">14:09</time>
+                            </footer>
+                        </li>
+
+                        <!-- SIDEBAR-ITEM -->
+                        <li class="sidebar-item">
+                            <h3 class="sidebar-title">
+                                <a href="#" class="sidebar-link">Узбекистан утвердил соглашение о содействии занятости в странах СНГ</a>
+                            </h3>
+                            <footer class="sidebar-footer">
+                                    <span class="article-footer-text">ИА красная весна</span>
+                                    <time datetime="2021-05-12T10:19:00">10:19</time>
+                            </footer>
+                        </li>
+
+                        <!-- SIDEBAR-ITEM -->
+                        <li class="sidebar-item">
+                            <h3 class="sidebar-title">
+                                <a href="#" class="sidebar-link">В Узбекистане увеличиваются очереди за автомобилями UzAuto</a>
+                            </h3>
+                            <footer class="sidebar-footer">
+                                    <span class="article-footer-text">Северная газета (Армянск)</span>
+                                    <time datetime="2021-05-12T13:50:00">13:50</time>
+                            </footer>
+                        </li>
+
+                        <!-- SIDEBAR-ITEM -->
+                        <li class="sidebar-item">
+                            <h3 class="sidebar-title">
+                                <a href="#" class="sidebar-link">Минтуризма опровергло приостановку выплат за шаги</a>
+                            </h3>
+                            <footer class="sidebar-footer">
+                                    <span class="article-footer-text">Sputnik Узбекистан</span>
+                                    <time datetime="2021-05-12T14:32:00">14:32</time>
+                            </footer>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- SIDEBAR-AD -->
+                <aside>
+                    <a href="https://domtut.uz" target="_blank">
+                        <img class="sidebar-ad-img list-ad-img" src="img/list-ad.jpg" alt="home banner" srcset="img/list-ad.jpg 1x, img/list-ad@2x.jpg 2x" width="393" height="553">
+                    </a>
+                </aside>
+            </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- SITE-FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <!-- FOOTER-LOGO -->
+            <a class="footer-logo" href="index.html">NAMANGANLIKLAR 24</a>
+            
+            <!-- FOOTER-LINKS -->
+            <div class="footer-links">
+                <div class="footer-links-description">
+                    Воспроизводство, копирование, использование информации с сайта «NAMANGANLIKLAR24.UZ» возможно только с предварительного письменного разрешения редакции
+                </div>
+                
+                <div class="footer-links-lists">
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Информация о сайте</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Напишите нам</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Реклама</a>
+                        </li>
+                        <li class="footer-top-text footer-top-text-last">
+                            <a class="footer-links-link" href="#">Прислать новость</a>
+                        </li>
+                    </ul>
+                    
+                    <ul class="footer-links-list">
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Использование материалов</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Темы дня</a>
+                        </li>
+                        <li class="footer-links-item">
+                            <a class="footer-links-link" href="#">Наша команда</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="footer-line">
+            
+            <!-- FOOTER-SOCIAL -->
+            <div class="footer-social">
+                <h2 class="footer-social-heading">Наши<br> социальные сети</h2>
+                <ul class="footer-social-list">
+                    <li class="footer-social-item">
+                        <a href="#" class="footer-social-link">
+                            <img class="footer-social-img" src="img/facebook-icon.svg" alt="Facebook icon" width="25" height="25">
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#" class="footer-social-link">
+                            <img class="footer-social-img" src="img/instagram-icon.svg" alt="Instagram icon" width="25" height="25">
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#" class="footer-social-link">
+                            <img class="footer-social-img" src="img/telegram-icon.svg" alt="Telegram icon" width="25" height="25">
+                        </a>
+                    </li>
+                    <li class="footer-social-item">
+                        <a href="#" class="footer-social-link">
+                            <img class="footer-social-img" src="img/youtube-icon.svg" alt="Youtube icon" width="25" height="25">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
