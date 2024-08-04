@@ -906,14 +906,13 @@ only screen and (                min-resolution: 2dppx) {
         background-color: #f6f6f6;
         left: 0;
         top: 0;
-        height: 100%;
+        height: 100vh;
         width: 70%;
         padding: 20px;
         border: 2px solid #2959ce;
         transform: translateX(-100%);
         transition: transform 0.3s ease;
         border-top-right-radius: 30px;
-        border-bottom-right-radius: 30px;
     }
     
     .sitenav.sitenav-active {
