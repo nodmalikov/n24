@@ -6,7 +6,6 @@ html {
 }
 
 .global-news-container,
-.grid-news,
 .notice-on,
 .footer {
     display: none;
@@ -341,7 +340,7 @@ img {
 }
 
 .grid-news-item {
-    width: 390px;
+    max-width: 390px;
     padding: 20px 17px 15px;
     background-color: #f6f6f6;
     border-radius: 15px;
@@ -986,6 +985,10 @@ only screen and (                min-resolution: 2dppx) {
     .modal-dialog {
         max-width: 90vw;
     }
+
+    .grid-news {
+        padding-top: 30px;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -1000,6 +1003,17 @@ only screen and (                min-resolution: 2dppx) {
     .modal-content-text {
         font-size: 24px;
         line-height: 32px;
+    }
+}
+
+@media only screen and (max-width:420px) {
+    .grid-news-item {
+        padding: 10px;
+    }
+
+    .article-title-link {
+        font-size: 18px;
+        line-height: 24px;
     }
 }
 
@@ -1064,5 +1078,10 @@ only screen and (                min-resolution: 2dppx) {
     .modal-content-text {
         font-size: 16px;
         line-height: 24px;
+    }
+
+    .article-title-link {
+        font-size: 15px;
+        line-height: 21px;
     }
 }
