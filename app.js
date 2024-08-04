@@ -9,6 +9,9 @@ const elSitenav = document.querySelector('.sitenav');
 const elSeeBtn = document.querySelector('.see-btn');
 const elHeaderAside = document.querySelector('.header-aside');
 const elHeaderTop = document.querySelector('.header-top');
+const modal = document.getElementById('demo-modal');
+const closeModalButton = document.querySelector('.modal-closed-button');
+const enableNotificationsLink = document.querySelector('.modal-content-link');
 
 // MODAL
 if(elModalClosedButton) {
@@ -26,13 +29,13 @@ setTimeout (function () {
 }, 3000)
 
 // MENU-SWIPE
-document.addEventListener("DOMContentLoaded", () => {
-    elSeeBtn.addEventListener("click", () => {
-        elMobileMenu.classList.toggle("mobile-menu-active");
+document.addEventListener('DOMContentLoaded', () => {
+    elSeeBtn.addEventListener('click', () => {
+        elMobileMenu.classList.toggle('mobile-menu-active');
     });
     
-    elMenuBtn.addEventListener("click", () => {
-        elSitenav.classList.toggle("sitenav-active");
+    elMenuBtn.addEventListener('click', () => {
+        elSitenav.classList.toggle('sitenav-active');
     });
     
     let touchStartX = 0;
@@ -40,12 +43,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let touchEndX = 0;
     let touchEndY = 0;
     
-    document.addEventListener("touchstart", (event) => {
+    document.addEventListener('touchstart', (event) => {
         touchStartX = event.changedTouches[0].screenX;
         touchStartY = event.changedTouches[0].screenY;
     });
     
-    document.addEventListener("touchend", (event) => {
+    document.addEventListener('touchend', (event) => {
         touchEndX = event.changedTouches[0].screenX;
         touchEndY = event.changedTouches[0].screenY;
         handleSwipe();
@@ -54,11 +57,11 @@ document.addEventListener("DOMContentLoaded", () => {
     function handleSwipe() {
         // Chapga siljish
         if (touchStartX - touchEndX > 50) {
-            elSitenav.classList.remove("sitenav-active");
+            elSitenav.classList.remove('sitenav-active');
         }
         // Pastga siljish
         if (touchEndY - touchStartY > 50) {
-            elMobileMenu.classList.remove("mobile-menu-active");
+            elMobileMenu.classList.remove('mobile-menu-active');
         }
     }
 });
@@ -80,9 +83,9 @@ window.onscroll = function() {
     if (window.innerWidth > 1000) {
         const offset = elSitenav.offsetHeight;
         if (window.scrollY > offset - 20) {
-            elSitenav.classList.add("sitenav-background");
+            elSitenav.classList.add('sitenav-background');
         } else if (window.scrollY < offset - 20) {
-            elSitenav.classList.remove("sitenav-background");
+            elSitenav.classList.remove('sitenav-background');
         }
     }
 }
@@ -104,4 +107,3 @@ window.addEventListener('DOMContentLoaded', () => {
     // ASIDE MARGIN UPDATE
     window.addEventListener('resize', AsideMargin);
 });
-
