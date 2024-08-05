@@ -1,7 +1,4 @@
-const elModal = document.querySelector('#demo-modal');
 const elModalOpneButton = document.querySelector('.button-orange');
-const elModalClosedButton = document.querySelector('.modal-closed-button');
-const elMenuClose = document.querySelector('.menu-close');
 const elHeader = document.querySelector('.header');
 const elMenuBtn = document.querySelector('.menu-btn');
 const elMobileMenu = document.querySelector('.mobile-menu');
@@ -9,18 +6,20 @@ const elSitenav = document.querySelector('.sitenav');
 const elSeeBtn = document.querySelector('.see-btn');
 const elHeaderAside = document.querySelector('.header-aside');
 const elHeaderTop = document.querySelector('.header-top');
-const modal = document.getElementById('demo-modal');
+const elModal = document.getElementById('demo-modal');
 const closeModalButton = document.querySelector('.modal-closed-button');
-const enableNotificationsLink = document.querySelector('.modal-content-link');
+const elModalBtn = document.querySelector('.modal-content-link');
 
 // MENU-SWIPE
 document.addEventListener('DOMContentLoaded', () => {
     elSeeBtn.addEventListener('click', () => {
         elMobileMenu.classList.toggle('mobile-menu-active');
+        elSeeBtn.classList.toggle('rotate');
     });
     
     elMenuBtn.addEventListener('click', () => {
         elSitenav.classList.toggle('sitenav-active');
+        elMenuBtn.classList.toggle('rotate');
     });
     
     let touchStartX = 0;
@@ -40,32 +39,22 @@ document.addEventListener('DOMContentLoaded', () => {
     });
     
     function handleSwipe() {
-        // Chapga siljish
+        // CHAPGA SILJISH
         if (touchStartX - touchEndX > 50) {
             elSitenav.classList.remove('sitenav-active');
+            elMenuBtn.classList.remove('rotate');
         }
-        // Pastga siljish
+        // PASTGA SILJISH
         if (touchEndY - touchStartY > 50) {
             elMobileMenu.classList.remove('mobile-menu-active');
+            elSeeBtn.classList.remove('rotate');
         }
-    }
-});
-
-// MOBILE-MENU
-elMenuClose.addEventListener('click', function () {
-    elSitenav.classList.remove('sitenav-active');
-});
-
-// REMOVE MENU-OPEN CLASS WHEN CLICKING OUTSIDE THE HEADER
-document.addEventListener('click', function (event) {
-    if (!elHeader.contains(event.target)) {
-        elSitenav.classList.remove('sitenav-active');
     }
 });
 
 // SCROLL
 window.onscroll = function() {
-    if (window.innerWidth > 1000) {
+    if (window.innerWidth > 1001) {
         const offset = elSitenav.offsetHeight;
         if (window.scrollY > offset - 20) {
             elSitenav.classList.add('sitenav-background');
@@ -98,20 +87,20 @@ document.addEventListener('DOMContentLoaded', () => {
     // CHECK LOCALSTORAGE FOR USER'S PREFERENCE
     if (localStorage.getItem('modalClosed') !== 'true') {
         setTimeout(() => {
-            modal.classList.add('modal-open');
-        }, 3000); // Show modal after 3 seconds
+            elModal.classList.add('modal-open');
+        }, 3000); // SHOW MODAL AFTER 3 SECONDS
     }
     
     // CLOSE MODAL AND SAVE USER'S CHOICE TO LOCALSTORAGE
     closeModalButton.addEventListener('click', () => {
-        modal.classList.remove('modal-open');
+        elModal.classList.remove('modal-open');
         localStorage.setItem('modalClosed', 'true');
     });
     
     // HANDLE ENABLING NOTIFICATIONS AND SAVE TO LOCALSTORAGE
-    enableNotificationsLink.addEventListener('click', (e) => {
+    elModalBtn.addEventListener('click', (e) => {
         e.preventDefault();
-        modal.classList.remove('modal-open');
+        elModal.classList.remove('modal-open');
         localStorage.setItem('modalClosed', 'true');
         // ADDITIONAL LOGIC TO ENABLE NOTIFICATIONS CAN BE ADDED HERE
     });

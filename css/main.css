@@ -198,7 +198,6 @@ img {
 }
 
 .mobile-line,
-.menu-close,
 .header-btn-group {
     display: none;
 }
@@ -943,7 +942,6 @@ only screen and (                min-resolution: 2dppx) {
     .sitenav-list {
         flex-direction: column;
         gap: 5px;
-        margin-top: 25px;
     }
     
     .sitenav-item {
@@ -957,17 +955,6 @@ only screen and (                min-resolution: 2dppx) {
     
     .sitenav-link {
         font-size: 15px;
-    }
-    
-    .menu-close {
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        color: #555;
-        display: block;
-        width: 25px;
-        height: 25px;
     }
     
     .header-btn-group {
@@ -985,6 +972,11 @@ only screen and (                min-resolution: 2dppx) {
         border: 0;
         border-radius: 7px;
         padding: 0;
+        transition: transform 0.3s ease;
+    }
+    
+    .rotate {
+        transform: rotate(90deg);
     }
     
     .menu-icon,
