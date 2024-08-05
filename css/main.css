@@ -6,7 +6,6 @@ html {
 }
 
 .global-news-container,
-.notice-on,
 .footer {
     display: none;
 }
@@ -1001,6 +1000,18 @@ only screen and (                min-resolution: 2dppx) {
     .grid-news {
         padding-top: 20px;
     }
+
+    .notice-on {
+        flex-direction: column;
+        margin: 0;
+        margin-top: 30px;
+        padding: 20px;
+        gap: 30px;
+    }
+
+    .notice-text {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width:500px) {
@@ -1051,6 +1062,11 @@ only screen and (                min-resolution: 2dppx) {
         font-size: 20px;
         line-height: 28px;
     }
+
+    .notice-text {
+        font-size: 18px;
+        line-height: 24px;
+    }
 }
 
 @media only screen and (max-width:350px) {
@@ -1095,5 +1111,10 @@ only screen and (                min-resolution: 2dppx) {
     .article-title-link {
         font-size: 15px;
         line-height: 21px;
+    }
+
+    .notice-text {
+        font-size: 16px;
+        line-height: 22px;
     }
 }
