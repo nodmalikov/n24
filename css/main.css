@@ -396,7 +396,7 @@ img {
 
 /* GLOBAL-NEWS */
 .list-global-news {
-    padding-top: 20px;
+    padding-top: 50px;
 }
 
 .global-news-heading {
@@ -670,10 +670,11 @@ only screen and (                min-resolution: 2dppx) {
 
 /* FORM */
 .contact-page-form {
-    width: 696px;
+    max-width: 696px;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
+    flex-grow: 1;
 }
 
 .contact-form-wrapper {
@@ -717,6 +718,7 @@ only screen and (                min-resolution: 2dppx) {
 
 /* CONTACT-PAGE */
 .contact-page {
+    padding-top: 50px;
     padding-bottom: 100px;
 }
 
@@ -736,7 +738,8 @@ only screen and (                min-resolution: 2dppx) {
 
 /* CONTACT-INFORMATION */
 .contact-information {
-    width: 494px;
+    max-width: 494px;
+    width: 100%;
 }
 
 .contact-information-list {
@@ -1058,6 +1061,16 @@ only screen and (                min-resolution: 2dppx) {
     .footer-links-list {
         padding-right: 0;
     }
+    
+    .list-global-news,
+    .contact-page {
+        padding-top: 20px;
+    }
+    
+    .contact-page-content {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
 }
 
 @media only screen and (max-width: 810px) {
@@ -1148,6 +1161,12 @@ only screen and (                min-resolution: 2dppx) {
     .button-orange {
         font-size: 18px;
     }
+    
+    .global-news-heading,
+    .contact-page-heading {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
 }
 
 @media only screen and (max-width: 350px) {
@@ -1176,6 +1195,10 @@ only screen and (                min-resolution: 2dppx) {
     .modal-content-text {
         font-size: 18px;
         line-height: 26px;
+    }
+    
+    .contact-information-list {
+        padding: 10px;
     }
 }
 
