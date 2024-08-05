@@ -1071,6 +1071,11 @@ only screen and (                min-resolution: 2dppx) {
         flex-direction: column-reverse;
         gap: 20px;
     }
+
+    .global-news-container,
+    .contact-page {
+        padding-bottom: 50px;
+    }
 }
 
 @media only screen and (max-width: 810px) {
