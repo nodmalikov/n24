@@ -1033,6 +1033,10 @@ only screen and (                min-resolution: 2dppx) {
 }
 
 @media only screen and (max-width: 810px) {
+    .flex-news {
+        margin-right: 0;
+    }
+    
     .flex-news-item {
         flex-direction: column;
         align-items: center;
@@ -1041,6 +1045,7 @@ only screen and (                min-resolution: 2dppx) {
     .flex-news-img {
         margin-right: 0;
         margin-bottom: 15px;
+        width: 100%;
     }
     
     .sidebar-news {
