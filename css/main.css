@@ -1060,6 +1060,7 @@ only screen and (                min-resolution: 2dppx) {
     
     .footer-links-list {
         padding-right: 0;
+        width: 100%;
     }
     
     .list-global-news,
