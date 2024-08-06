@@ -326,7 +326,7 @@ img {
     border-radius: 8px;
     height: 128px;
     object-fit: cover;
-    object-position: right;
+    object-position: left;
 }
 
 
