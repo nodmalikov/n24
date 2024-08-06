@@ -84,24 +84,26 @@ window.addEventListener('DOMContentLoaded', () => {
 
 // CHECK LOCALSTORAGE FOR USER'S PREFERENCE
 document.addEventListener('DOMContentLoaded', () => {
-    // CHECK LOCALSTORAGE FOR USER'S PREFERENCE
-    if (localStorage.getItem('modalClosed') !== 'true') {
-        setTimeout(() => {
-            elModal.classList.add('modal-open');
-        }, 3000); // SHOW MODAL AFTER 3 SECONDS
+    if (elModal) {
+        // CHECK LOCALSTORAGE FOR USER'S PREFERENCE
+        if (localStorage.getItem('modalClosed') !== 'true') {
+            setTimeout(() => {
+                elModal.classList.add('modal-open');
+            }, 3000); // SHOW MODAL AFTER 3 SECONDS
+        }
+        
+        // CLOSE MODAL AND SAVE USER'S CHOICE TO LOCALSTORAGE
+        closeModalButton.addEventListener('click', () => {
+            elModal.classList.remove('modal-open');
+            localStorage.setItem('modalClosed', 'true');
+        });
+        
+        // HANDLE ENABLING NOTIFICATIONS AND SAVE TO LOCALSTORAGE
+        elModalBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            elModal.classList.remove('modal-open');
+            localStorage.setItem('modalClosed', 'true');
+            // ADDITIONAL LOGIC TO ENABLE NOTIFICATIONS CAN BE ADDED HERE
+        });
     }
-    
-    // CLOSE MODAL AND SAVE USER'S CHOICE TO LOCALSTORAGE
-    closeModalButton.addEventListener('click', () => {
-        elModal.classList.remove('modal-open');
-        localStorage.setItem('modalClosed', 'true');
-    });
-    
-    // HANDLE ENABLING NOTIFICATIONS AND SAVE TO LOCALSTORAGE
-    elModalBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        elModal.classList.remove('modal-open');
-        localStorage.setItem('modalClosed', 'true');
-        // ADDITIONAL LOGIC TO ENABLE NOTIFICATIONS CAN BE ADDED HERE
-    });
 });
