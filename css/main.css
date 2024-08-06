@@ -49,7 +49,8 @@ img {
     height: auto;
 }
 
-*:focus {
+header *:focus,
+.button:focus {
     outline: 2px dashed #7296ee;
     outline-offset: 2px;
 }
@@ -526,10 +527,6 @@ img {
     padding-bottom: 40px;
     color: #fff;
     background-color: #7297ef;
-}
-
-.footer *:focus {
-    outline: 2px dashed #fff;
 }
 
 /* FOOTER-LOGO */
