@@ -1134,7 +1134,7 @@ only screen and (                min-resolution: 2dppx) {
     .list-global-news,
     .contact-page,
     .article-wrapper {
-        padding-top: 20px;
+        padding-top: 10px;
     }
     
     .contact-page-content {
